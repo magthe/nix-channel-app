@@ -1,0 +1,3 @@
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+A simple example for setting up a personal Nix channel.

@@ -1,0 +1,17 @@
+sudo: true
+
+git:
+  depth: 3
+
+language: nix
+
+cache: false
+
+before_script:
+  - nix-channel --update
+  - nix-env --upgrade
+  - nix-env -i cachix
+  - cachix use magthe-temp
+
+script:
+  - nix-build

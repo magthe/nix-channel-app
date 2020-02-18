@@ -1,0 +1,14 @@
+name: nix-channel-app
+version: 0.0.1
+synopsis: Something to put in a Nix channel
+maintainer: Magnus Therning <magnus@therning.org>
+license: BSD3
+
+dependencies:
+  - base
+
+executables:
+  ze-app:
+    source-dirs:
+      - ze-app
+    main: Main.hs
