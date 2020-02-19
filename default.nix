@@ -9,7 +9,7 @@ let
   hl = haskell.lib;
 
   theApp = haskellPackages.developPackage {
-    root = ./.;
+    root = lib.cleanSource ./.;
     name = "nix-channel-app";
 
     modifier = (t.flip t.pipe)
