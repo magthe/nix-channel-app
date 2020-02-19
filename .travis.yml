@@ -14,4 +14,4 @@ before_script:
   - cachix use magthe-temp
 
 script:
-  - nix-build
+  - nix-build | cachix push magthe-temp
